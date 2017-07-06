@@ -5,6 +5,12 @@ class Blog < ApplicationRecord
   
   validates_presence_of :title, :body
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  
+  belongs_to :topic
+  
+>>>>>>> e9a6694a2e2442c9d8935aebfdb1bc042330d115
 =======
   
   belongs_to :topic

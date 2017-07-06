@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   resources :portfolios, except: [:show]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  get 'angular-items', to: 'portfolios#angular'
+>>>>>>> e9a6694a2e2442c9d8935aebfdb1bc042330d115
 =======
   get 'angular-items', to: 'portfolios#angular'
 >>>>>>> e9a6694a2e2442c9d8935aebfdb1bc042330d115
@@ -17,7 +21,10 @@ Rails.application.routes.draw do
   
   root to: 'pages#home'
 <<<<<<< HEAD
+<<<<<<< HEAD
 end
 =======
+=======
+>>>>>>> e9a6694a2e2442c9d8935aebfdb1bc042330d115
 end
 >>>>>>> e9a6694a2e2442c9d8935aebfdb1bc042330d115
