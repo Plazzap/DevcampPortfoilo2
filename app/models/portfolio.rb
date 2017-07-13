@@ -1,4 +1,11 @@
 class Portfolio < ApplicationRecord
+<<<<<<< HEAD
+<<<<<<< HEAD
+  validates_presence_of :title, :body, :main_image, :thumb_image
+end
+=======
+=======
+>>>>>>> e9a6694a2e2442c9d8935aebfdb1bc042330d115
   has_many :technologies
   accepts_nested_attributes_for :technologies,
                                 reject_if: lambda { |attrs| attrs['name'].blank? }
@@ -18,4 +25,9 @@ class Portfolio < ApplicationRecord
     self.main_image ||= Placeholder.image_generator(height: '600', width: '400')
     self.thumb_image ||= Placeholder.image_generator(height: '350', width: '200')
   end
+<<<<<<< HEAD
 end
+>>>>>>> e9a6694a2e2442c9d8935aebfdb1bc042330d115
+=======
+end
+>>>>>>> e9a6694a2e2442c9d8935aebfdb1bc042330d115
